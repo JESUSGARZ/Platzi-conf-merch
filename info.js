@@ -1,3 +1,5 @@
+
+//firebase.json
 {
   "hosting": {
     "public": "dist",
@@ -12,5 +14,13 @@
         "destination":"/index.html"
       }
     ]
+  }
+}
+
+//.firebaserc
+
+{
+  "projects": {
+    "default": "platzi-store-merch-5ddfa"
   }
 }
