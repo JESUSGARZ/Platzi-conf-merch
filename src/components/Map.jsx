@@ -10,8 +10,10 @@ const Map = ({ data }) => {
     const defaultCenter = {
         lat: data.lat, lng: data.lng
     }
+
+
   return (
-    <LoadScript googleMapsApiKey='AIzaSyA1P6ZGwA2TAKVsHatkujPl92BHnFzDTFI'>
+    <LoadScript googleMapsApiKey= {'AIzaSyA1P6ZGwA2TAKVsHatkujPl92BHnFzDTFI'}>
         <GoogleMap
             mapContainerStyle ={mapStyles}
             zoom={9}
