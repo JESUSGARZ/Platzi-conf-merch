@@ -6,10 +6,11 @@ import '../styles/components/Payment.css';
 const Payment = ({history}) => {
   const { state, addNewOrder } = useContext(AppContext);
   const { cart, buyer } = state;
+  const paypalKey = process.env.PAYPAL_CLIENT_ID;
 
 
   const paypalOptions = {
-    clientId: 'access_token$sandbox$dw95byscp9hqycx5$0d080b3faaa6cd20daa4e1c84344e21a',
+    clientId: paypalKey,
     intent: 'capture',
     currency:'USD'
   }
