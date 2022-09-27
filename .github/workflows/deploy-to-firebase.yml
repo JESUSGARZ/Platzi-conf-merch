@@ -11,9 +11,9 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@main
       - name: Install Dependencies
-        run: npm install
+        run: yarn install
       - name: Build
-        run: npm run build
+        run: yarn build
         env:
           API_KEY: ${{ secrets.API_KEY }}
           PAYPAL_CLIENT_ID: ${{ secrets.PAYPAL_CLIENT_ID }}
